@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <!-- Chart JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #f4f6f9;
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            color: #2c3e50;
+
+            margin-bottom: 30px;
+
+        }
+
+        /* ===== DASHBOARD CARDS ===== */
+
+        .dashboard {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 30px;
+
+        }
+
+        .card {
+
+            background: white;
+
+            padding: 20px;
+
+            width: 220px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+        }
+
+        .card h2 {
+
+            margin: 10px 0;
+
+            font-size: 28px;
+
+        }
+
+        .total {
+
+            color: #3498db;
+
+        }
+
+        .correct {
+
+            color: #27ae60;
+
+        }
+
+        .wrong {
+
+            color: #e74c3c;
+
+        }
+
+        .accuracy {
+
+            color: #8e44ad;
+
+        }
+
+        /* ===== CHART ===== */
+
+        .chart-container {
+
+            width: 40%;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 12px;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+        }
+
+        /* ===== TABLE ===== */
+
+        table {
+
+            width: 100%;
+
+            margin-top: 30px;
+
+            border-collapse: collapse;
+
+            background: white;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+        }
+
+        th, td {
+
+            padding: 12px;
+
+            border: 1px solid #ddd;
+
+            text-align: center;
+
+        }
+
+        th {
+
+            background: #2c3e50;
+
+            color: white;
+
+        }
+
+        img {
+
+            width: 70px;
+
+            height: 70px;
+
+            object-fit: cover;
+
+            border-radius: 8px;
+
+        }
+
+        .correct-status {
+
+            color: green;
+
+            font-weight: bold;
+
+        }
+
+        .wrong-status {
+
+            color: red;
+
+            font-weight: bold;
+
+        }
+
+        .pending-status {
+
+            color: orange;
+
+            font-weight: bold;
+
+        }
+
+        .empty {
+
+            text-align: center;
+
+            color: gray;
+
+            margin-top: 30px;
+
+            font-size: 20px;
+
+        }
+
+        /* ===== PERFORMANCE MESSAGE ===== */
+
+        .performance {
+
+            margin-top: 25px;
+
+            text-align: center;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+        }
+
+        .good {
+
+            color: green;
+
+        }
+
+        .bad {
+
+            color: red;
+
+        }
+
+        /* ===== VERIFY BUTTONS ===== */
+
+        .verify-btn {
+
+            border: none;
+
+            padding: 6px 12px;
+
+            border-radius: 6px;
+
+            color: white;
+
+            cursor: pointer;
+
+            margin: 4px;
+
+        }
+
+        .correct-btn {
+
+            background: green;
+
+        }
+
+        .wrong-btn {
+
+            background: red;
+
+        }
+
+        /* ===== RESPONSIVE ===== */
+
+        @media(max-width:768px){
+
+            .dashboard {
+
+                flex-direction: column;
+
+                align-items: center;
+
+            }
+
+            .chart-container {
+
+                width: 90%;
+
+            }
+
+            table {
+
+                font-size: 14px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ===== TITLE ===== -->
+
+    <h1>
+        📊 Plant Species Prediction Admin Dashboard
+    </h1>
+
+    <!-- ===== DASHBOARD STATS ===== -->
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <h3>Total Uploads</h3>
+
+            <h2 class="total">
+                {{ total }}
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Correct Predictions</h3>
+
+            <h2 class="correct">
+                {{ correct }}
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Wrong Predictions</h3>
+
+            <h2 class="wrong">
+                {{ wrong }}
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Accuracy</h3>
+
+            <h2 class="accuracy">
+                {{ accuracy }}%
+            </h2>
+
+        </div>
+
+    </div>
+
+    <!-- ===== PIE CHART ===== -->
+
+    <div class="chart-container">
+
+        <canvas id="chart"></canvas>
+
+    </div>
+
+    <!-- ===== PERFORMANCE MESSAGE ===== -->
+
+    <div class="performance">
+
+        {% if accuracy >= 80 %}
+
+            <span class="good">
+
+                ✅ Model Performance is Good
+
+            </span>
+
+        {% else %}
+
+            <span class="bad">
+
+                ⚠ Model Requires Improvement
+
+            </span>
+
+        {% endif %}
+
+    </div>
+
+    <!-- ===== TABLE ===== -->
+
+    {% if history|length == 0 %}
+
+        <p class="empty">
+
+            No prediction records available
+
+        </p>
+
+    {% else %}
+
+    <table>
+
+        <tr>
+
+            <th>Uploaded Image</th>
+
+            <th>Predicted Species</th>
+
+            <th>Actual Species</th>
+
+            <th>Confidence</th>
+
+            <th>Status</th>
+
+            <th>Prediction Time</th>
+
+        </tr>
+
+        {% for item in history %}
+
+        <tr>
+
+            <!-- IMAGE -->
+
+            <td>
+
+                <img src="/{{ item.image }}">
+
+            </td>
+
+            <!-- PREDICTED -->
+
+            <td>
+
+                {{ item.predicted_species }}
+
+            </td>
+
+            <!-- ACTUAL -->
+
+            <td>
+
+                {% if item.actual_species %}
+
+                    {{ item.actual_species }}
+
+                {% else %}
+
+                    Not Set
+
+                {% endif %}
+
+            </td>
+
+            <!-- CONFIDENCE -->
+
+            <td>
+
+                {{ item.confidence }}%
+
+            </td>
+
+            <!-- STATUS -->
+
+            <td>
+
+                {% if item.status == "Correct" %}
+
+                    <span class="correct-status">
+
+                        Correct
+
+                    </span>
+
+                {% elif item.status == "Pending" %}
+
+                    <span class="pending-status">
+
+                        Pending
+
+                    </span>
+
+                    <br><br>
+
+                    <!-- VERIFY BUTTONS -->
+
+                    <a href="/verify/{{ loop.index0 }}/correct">
+
+                        <button class="verify-btn correct-btn">
+
+                            ✓ Correct
+
+                        </button>
+
+                    </a>
+
+                    <a href="/verify/{{ loop.index0 }}/wrong">
+
+                        <button class="verify-btn wrong-btn">
+
+                            ✗ Wrong
+
+                        </button>
+
+                    </a>
+
+                {% else %}
+
+                    <span class="wrong-status">
+
+                        Wrong
+
+                    </span>
+
+                {% endif %}
+
+            </td>
+
+            <!-- TIME -->
+
+            <td>
+
+                {{ item.time }}
+
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    {% endif %}
+
+    <!-- ===== CHART SCRIPT ===== -->
+
+    <script>
+
+        const correct =
+            Number("{{ correct | default(0) }}");
+
+        const wrong =
+            Number("{{ wrong | default(0) }}");
+
+        const ctx =
+            document.getElementById('chart');
+
+        new Chart(ctx, {
+
+            type: 'pie',
+
+            data: {
+
+                labels: [
+
+                    'Correct Predictions',
+
+                    'Wrong Predictions'
+
+                ],
+
+                datasets: [{
+
+                    data: [correct, wrong],
+
+                    backgroundColor: [
+
+                        '#27ae60',
+
+                        '#e74c3c'
+
+                    ]
+
+                }]
+
+            },
+
+            options: {
+
+                responsive: true
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+

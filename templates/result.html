@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Identification Result</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.15),
+    rgba(255,255,255,0.15)),
+    url("/static/images/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    padding:25px;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+
+    background:rgba(255,255,255,0.35);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    padding:30px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+
+.main-title{
+    text-align:center;
+    font-size:58px;
+    font-weight:800;
+    color:#0a5a23;
+    margin-bottom:18px;
+}
+
+/* SUCCESS */
+
+.success{
+    width:fit-content;
+    margin:0 auto 35px;
+
+    background:linear-gradient(to right,#1faa4a,#0c7a30);
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-size:28px;
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* IMAGE SECTION */
+
+.image-section{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.image-box{
+    width:46%;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+.image-header{
+    padding:16px;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.green{
+    background:#0b6d2b;
+}
+
+.purple{
+    background:#7a2dc2;
+}
+
+.image-box img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+/* PLANT TITLE */
+
+.plant-title{
+    width:fit-content;
+    margin:10px auto 35px;
+
+    background:linear-gradient(to right,#0f8a38,#0b5e26);
+
+    color:white;
+
+    padding:14px 45px;
+
+    border-radius:50px;
+
+    font-size:36px;
+    font-weight:800;
+}
+
+/* NAME ROW */
+
+.name-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+
+    margin-bottom:30px;
+}
+
+/* NAME CARD */
+
+.name-card{
+    background:rgba(255,255,255,0.85);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.name-card:hover{
+    transform:translateY(-5px);
+}
+
+.common-card{
+    border-top:15px solid #1565c0;
+}
+
+.scientific-card{
+    border-top:15px solid #7b1fa2;
+}
+
+.card-icon{
+    font-size:45px;
+    margin-bottom:15px;
+    color:#0c7a30;
+}
+
+.card-heading{
+    font-size:30px;
+    font-weight:800;
+    margin-bottom:15px;
+    color:#991cb2;
+}
+
+.card-value{
+    font-size:30px;
+    font-weight:700;
+    color:#111;
+}
+
+/* BUTTON ROW */
+
+.button-row{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:30px;
+
+    flex-wrap:nowrap;
+}
+
+/* LINK */
+
+.info-link{
+
+    width:48%;
+
+    text-decoration:none;
+}
+
+/* BUTTON */
+
+.info-button{
+
+    height:220px;
+
+    border-radius:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    transition:0.35s;
+}
+
+.info-button:hover{
+
+    transform:translateY(-8px) scale(1.02);
+}
+
+/* COLORS */
+
+.orange-btn{
+
+    background:
+    linear-gradient(135deg,#ff9800,#ef6c00);
+}
+
+.green-btn{
+
+    background:
+    linear-gradient(135deg,#2e7d32,#0d5f22);
+}
+
+/* ICON */
+
+.btn-icon{
+
+    font-size:55px;
+
+    margin-bottom:18px;
+}
+
+/* TITLE */
+
+.btn-title{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    text-align:center;
+
+    padding:0 15px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .button-row{
+
+        flex-wrap:wrap;
+    }
+
+    .info-link{
+
+        width:100%;
+    }
+
+}
+/* CONFIDENCE */
+
+.confidence-card{
+    margin-top:35px;
+
+    background:rgba(255,255,255,0.85);
+
+    border-radius:25px;
+
+    padding:25px;
+}
+
+.confidence-title{
+    font-size:36px;
+    font-weight:800;
+
+    color:#0a2d73;
+
+    margin-bottom:20px;
+}
+
+.bar{
+    width:100%;
+    height:28px;
+
+    background:#ddd;
+
+    border-radius:40px;
+
+    overflow:hidden;
+}
+
+.fill{
+    width:0%;
+    height:100%;
+
+    background:
+    linear-gradient(to right,
+    red,
+    orange,
+    yellow,
+    limegreen,
+    green);
+
+    transition:1.5s;
+}
+
+.score{
+    text-align:right;
+
+    margin-top:15px;
+
+    font-size:55px;
+    font-weight:800;
+
+    color:#11853a;
+}
+
+/* NOTE */
+
+.note{
+    margin-top:25px;
+
+    background:rgba(255,255,255,0.78);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    font-size:22px;
+    font-weight:600;
+
+    color:#222;
+
+    border-left:10px solid #1976d2;
+}
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+    .name-row,
+    .button-row{
+        grid-template-columns:1fr;
+    }
+
+    .image-box{
+        width:100%;
+    }
+
+    .main-title{
+        font-size:40px;
+    }
+
+    .success{
+        font-size:20px;
+    }
+
+}
+    </style>
+
+    
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TITLE -->
+
+    <div class="main-title">
+        🌿 Plant Identification Result
+    </div>
+
+    <!-- SUCCESS -->
+
+    <div class="success">
+        <i class="fa-solid fa-circle-check"></i>
+        Plant Identified Successfully!
+    </div>
+
+    <!-- IMAGE SECTION -->
+
+    <div class="image-section">
+
+        <!-- UPLOADED IMAGE -->
+
+        <div class="image-box">
+
+            <div class="image-header green">
+                <i class="fa-solid fa-camera"></i>
+                Uploaded Image
+            </div>
+
+            <img src="/{{ image }}">
+
+        </div>
+
+        <!-- REFERENCE IMAGE -->
+
+        <div class="image-box">
+
+            <div class="image-header purple">
+                <i class="fa-solid fa-seedling"></i>
+                Reference Image
+            </div>
+
+            <img src="{{ info.image }}">
+
+        </div>
+
+    </div>
+
+    <!-- PLANT INFO TITLE -->
+
+    <div class="plant-title">
+        🌱 Plant Information
+    </div>
+
+    <!-- NAME BOXES -->
+
+    <div class="name-row">
+
+        <!-- COMMON NAME -->
+
+        <div class="name-card common-card">
+
+            <div class="card-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="card-heading">
+                Common Name
+            </div>
+
+            <div class="card-value">
+                {{ common_name }}
+            </div>
+
+        </div>
+
+        <!-- SCIENTIFIC NAME -->
+
+        <div class="name-card scientific-card">
+
+            <div class="card-icon">
+                <i class="fa-solid fa-dna"></i>
+            </div>
+
+            <div class="card-heading">
+                Scientific Name
+            </div>
+
+            <div class="card-value">
+                {{ info.scientific_name }}
+            </div>
+
+        </div>
+
+    </div>
+<!-- BUTTON ROW -->
+
+<div class="button-row">
+
+    <!-- REGION BUTTON -->
+
+    <a href="/region/{{ common_name|lower|replace(' ','_') }}"
+    class="info-link">
+
+        <div class="info-button orange-btn">
+
+            <div class="btn-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="btn-title">
+                Regions Found In India<br>view details
+            </div>
+
+        </div>
+
+    </a>
+
+    <!-- MEDICINAL BUTTON -->
+
+    <a href="/medicinal/{{ common_name|lower|replace(' ','_') }}"
+    class="info-link">
+
+        <div class="info-button green-btn">
+
+            <div class="btn-icon">
+                <i class="fa-solid fa-mortar-pestle"></i>
+            </div>
+
+            <div class="btn-title">
+                Medicinal Uses<br>view details
+            </div>
+
+        </div>
+
+    </a>
+
+</div>
+    <!-- CONFIDENCE -->
+
+    <div class="confidence-card">
+
+        <div class="confidence-title">
+            🎯 Confidence Score
+        </div>
+
+        <div class="bar">
+            <div class="fill" id="fillBar"></div>
+        </div>
+
+        <div class="score">
+            {{ confidence }}%
+        </div>
+
+    </div>
+
+    <!-- NOTE -->
+
+    <div class="note">
+
+        ⚠️ This information is for educational purposes only.
+        Consult a medical professional before medicinal use.
+
+    </div>
+
+</div>
+
+<script>
+
+window.onload = function(){
+
+    document.getElementById("fillBar").style.width =
+    "{{ confidence }}%";
+
+};
+
+</script>
+
+</body>

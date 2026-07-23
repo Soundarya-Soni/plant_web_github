@@ -1,0 +1,496 @@
+{
+  "aloe_vera": {
+    "scientific_name": "Aloe barbadensis miller",
+    "common_name": "Aloe Vera",
+    "image": "/static/images/aloevera.png",
+    "medicinal_use": [
+      { "title": "Skin Healing", "description": "Heals burns, cuts, and wounds naturally. Soothes irritation and redness." },
+      { "title": "Digestive Health", "description": "Improves digestion and relieves constipation. Supports gut detoxification." },
+      { "title": "Hair Care", "description": "Strengthens hair roots and reduces dandruff. Improves scalp health." },
+      { "title": "Anti-inflammatory", "description": "Reduces inflammation and swelling. Used in herbal treatments." }
+    ],
+    "region": ["Rajasthan", "Gujarat", "Tamil Nadu", "Andhra Pradesh"]
+  },
+
+  "amruthaballi": {
+    "scientific_name": "Tinospora cordifolia",
+    "common_name": "Amruthaballi",
+    "image": "/static/images/amruthaballi.png",
+    "medicinal_use": [
+      { "title": "Immunity Booster", "description": "Strengthens immune system and fights infections. Used in fever treatment." },
+      { "title": "Fever Relief", "description": "Reduces body heat and fever. Common Ayurvedic remedy." },
+      { "title": "Liver Detox", "description": "Cleanses liver and improves function. Removes toxins from body." },
+      { "title": "Blood Sugar Control", "description": "Helps regulate glucose levels. Supports diabetes care naturally." }
+    ],
+    "region": ["Karnataka", "Kerala", "Tamil Nadu", "Andhra Pradesh"]
+  },
+
+  "arali": {
+    "scientific_name": "Nerium oleander",
+    "common_name": "Arali",
+    "image": "/static/images/arali.png",
+    "medicinal_use": [
+      { "title": "Skin Treatment", "description": "Used for skin infections externally. Reduces itching and irritation." },
+      { "title": "Pain Relief", "description": "Helps reduce joint and muscle pain. Mild anti-inflammatory effect." },
+      { "title": "Wound Healing", "description": "Speeds up wound recovery. Prevents infection." },
+      { "title": "Antibacterial", "description": "Fights harmful bacteria. Used in traditional medicine." }
+    ],
+    "region": ["Karnataka", "Kerala", "Tamil Nadu", "Maharashtra"]
+  },
+
+  "ashoka": {
+    "scientific_name": "Saraca asoca",
+    "common_name":"ashoka",
+    "image": "/static/images/ashoka.png",
+    "medicinal_use": [
+      { "title": "Women Health", "description": "Helps in menstrual disorders. Balances hormonal system." },
+      { "title": "Uterine Health", "description": "Strengthens uterus muscles. Supports reproductive health." },
+      { "title": "Stress Relief", "description": "Calms nervous system. Reduces emotional stress." },
+      { "title": "Anti-inflammatory", "description": "Reduces inflammation in body. Supports wellness." }
+    ],
+    "region": ["West Bengal", "Kerala", "Karnataka", "Uttar Pradesh"]
+  },
+
+  "ashwagandha": {
+    "scientific_name": "Withania somnifera",
+    "common_name": "Ashwagandha",
+    "image": "/static/images/ashwagandha.png",
+    "medicinal_use": [
+      { "title": "Stress Relief", "description": "Reduces anxiety and stress. Acts as a natural adaptogen." },
+      { "title": "Energy Booster", "description": "Improves stamina and strength. Reduces fatigue." },
+      { "title": "Better Sleep", "description": "Improves sleep quality. Calms nervous system." },
+      { "title": "Immunity Boost", "description": "Strengthens immune system. Improves resistance." }
+    ],
+    "region": ["Rajasthan", "Madhya Pradesh", "Punjab", "Haryana"]
+  },
+
+  "bamboo": {
+    "scientific_name": "Bambusa vulgaris",
+    "common_name": "Bamboo",
+    "image": "/static/images/bamboo.png",
+    "medicinal_use": [
+      { "title": "Bone Strength", "description": "Rich in silica. Strengthens bones and joints." },
+      { "title": "Respiratory Health", "description": "Helps in cough and asthma. Clears airways." },
+      { "title": "Wound Healing", "description": "Speeds wound recovery. Prevents infection." },
+      { "title": "Digestive Support", "description": "Improves digestion. Used in herbal medicine." }
+    ],
+    "region": ["Assam", "Kerala", "Karnataka", "West Bengal"]
+  },
+
+  "beans": {
+    "scientific_name": "Phaseolus vulgaris",
+    "common_name": "Beans",
+    "image": "/static/images/beans.png",
+    "medicinal_use": [
+      { "title": "Protein Source", "description": "Rich in protein. Supports muscle growth." },
+      { "title": "Heart Health", "description": "Reduces cholesterol. Supports heart function." },
+      { "title": "Blood Sugar Control", "description": "Regulates glucose levels. Good for diabetes." },
+      { "title": "Digestive Fiber", "description": "Improves digestion. Prevents constipation." }
+    ],
+    "region": ["Karnataka", "Maharashtra", "Tamil Nadu", "Uttar Pradesh"]
+  },
+
+  "betal": {
+    "scientific_name": "Piper betle",
+    "common_name": "Betal",
+    "image": "/static/images/betal.png",
+    "medicinal_use": [
+      { "title": "Oral Health", "description": "Improves oral hygiene. Freshens breath." },
+      { "title": "Digestion Aid", "description": "Improves digestion. Stimulates enzymes." },
+      { "title": "Wound Healing", "description": "Heals minor cuts. Prevents infection." },
+      { "title": "Respiratory Relief", "description": "Relieves cough and cold. Clears mucus." }
+    ],
+    "region": ["West Bengal", "Kerala", "Karnataka", "Tamil Nadu"]
+  },
+
+  "bhrami": {
+    "scientific_name": "Bacopa monnieri",
+    "common_name": "Bhrami",
+    "image": "/static/images/bhrami.png",
+    "medicinal_use": [
+      { "title": "Memory Boost", "description": "Improves memory and focus. Enhances brain function." },
+      { "title": "Stress Relief", "description": "Calms nerves. Reduces anxiety." },
+      { "title": "Sleep Support", "description": "Improves sleep quality. Helps relaxation." },
+      { "title": "Nerve Strength", "description": "Strengthens brain cells. Improves cognition." }
+    ],
+    "region": ["Kerala", "Karnataka", "Tamil Nadu", "Goa"]
+  },
+
+  "castor": {
+    "scientific_name": "Ricinus communis",
+    "common_name": "Castor",
+    "image": "/static/images/castor.png",
+    "medicinal_use": [
+      { "title": "Constipation Relief", "description": "Natural laxative. Cleans intestines." },
+      { "title": "Joint Pain Relief", "description": "Reduces inflammation. Used in massage oils." },
+      { "title": "Skin Care", "description": "Moisturizes skin. Heals dryness." },
+      { "title": "Wound Healing", "description": "Speeds recovery. Prevents infection." }
+    ],
+    "region": ["Gujarat", "Rajasthan", "Maharashtra", "Karnataka"]
+  },
+
+  "coriender": {
+    "scientific_name": "Coriandrum sativum",
+    "common_name": "Coriender",
+    "image": "/static/images/coriender.png",
+    "medicinal_use": [
+      { "title": "Digestion", "description": "Improves digestion. Reduces bloating." },
+      { "title": "Detox", "description": "Removes toxins. Supports liver health." },
+      { "title": "Blood Sugar Control", "description": "Controls glucose levels. Helps diabetes care." },
+      { "title": "Anti-inflammatory", "description": "Reduces inflammation. Supports joints." }
+    ],
+    "region": ["Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Punjab"]
+  },
+
+  "curry_leaf": {
+    "scientific_name": "Murraya koenigii",
+    "common_name": "curry_leaf",
+    "image": "/static/images/curryleave.png",
+    "medicinal_use": [
+      { "title": "Hair Growth", "description": "Strengthens hair roots. Reduces hair fall." },
+      { "title": "Digestion", "description": "Improves digestion. Reduces acidity." },
+      { "title": "Diabetes Control", "description": "Regulates blood sugar. Supports metabolism." },
+      { "title": "Liver Health", "description": "Improves liver function. Detoxifies body." }
+    ],
+    "region": ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh"]
+  },
+  
+  "jasmine": {
+    "scientific_name": "Jasminum sambac",
+    "common_name": "Jasmine",
+    "image": "/static/images/jasmine.png",
+    "medicinal_use": [
+      { "title": "Stress Relief", "description": "Jasmine fragrance helps reduce stress and anxiety. Promotes relaxation naturally." },
+      { "title": "Skin Care", "description": "Helps improve skin texture. Used in herbal oils and cosmetics." },
+      { "title": "Headache Relief", "description": "Aromatic compounds help reduce headaches. Calms nervous system." },
+      { "title": "Antiseptic Properties", "description": "Helps fight mild infections. Used in traditional remedies." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Kerala", "West Bengal"]
+  },
+
+  "lemon": {
+    "scientific_name": "Citrus limon",
+    "common_name": "Lemon",
+    "image": "/static/images/lemon.png",
+    "medicinal_use": [
+      { "title": "Immunity Boost", "description": "Rich in vitamin C. Strengthens immune system." },
+      { "title": "Digestion", "description": "Improves digestion and reduces bloating. Detoxifies body." },
+      { "title": "Skin Health", "description": "Helps brighten skin. Reduces acne and spots." },
+      { "title": "Detoxification", "description": "Flushes toxins from body. Supports liver health." }
+    ],
+    "region": ["Maharashtra", "Gujarat", "Tamil Nadu", "Punjab"]
+  },
+
+  "mango": {
+    "scientific_name": "Mangifera indica",
+    "common_name": "Mango",
+    "image": "/static/images/mango.png",
+    "medicinal_use": [
+      { "title": "Immunity Boost", "description": "Rich in vitamins A and C. Strengthens immunity." },
+      { "title": "Eye Health", "description": "Improves vision health. Supports retina function." },
+      { "title": "Digestion", "description": "Improves digestion when eaten ripe. Prevents constipation." },
+      { "title": "Energy Source", "description": "Provides natural energy. Rich in nutrients." }
+    ],
+    "region": ["Uttar Pradesh", "Maharashtra", "Karnataka", "Bihar"]
+  },
+
+  "mint": {
+    "scientific_name": "Mentha arvensis",
+    "common_name": "Mint",
+    "image": "/static/images/mint.png",
+    "medicinal_use": [
+      { "title": "Digestion Aid", "description": "Relieves indigestion and bloating. Soothes stomach." },
+      { "title": "Cold Relief", "description": "Clears nasal congestion. Helps breathing." },
+      { "title": "Headache Relief", "description": "Cooling effect reduces headaches. Calms nerves." },
+      { "title": "Oral Health", "description": "Freshens breath. Fights bacteria in mouth." }
+    ],
+    "region": ["Karnataka", "Uttar Pradesh", "Punjab", "Maharashtra"]
+  },
+
+  "neem": {
+    "scientific_name": "Azadirachta indica",
+    "common_name": "Neem",
+    "image": "/static/images/neem.png",
+    "medicinal_use": [
+      { "title": "Antibacterial", "description": "Fights bacteria and infections. Used in herbal medicine." },
+      { "title": "Skin Treatment", "description": "Treats acne and skin diseases. Reduces inflammation." },
+      { "title": "Blood Purification", "description": "Cleanses blood naturally. Improves immunity." },
+      { "title": "Oral Health", "description": "Strengthens gums and teeth. Reduces plaque." }
+    ],
+    "region": ["Rajasthan", "Karnataka", "Tamil Nadu", "Madhya Pradesh"]
+  },
+
+  "nithyapushpha": {
+    "scientific_name": "Catharanthus roseus",
+    "common_name": "Nithyapushpha",
+    "image": "/static/images/nithyapushpha.png",
+    "medicinal_use": [
+      { "title": "Diabetes Support", "description": "Helps regulate blood sugar levels. Used in Ayurveda." },
+      { "title": "Cancer Research", "description": "Contains compounds studied in cancer treatment. Medicinal plant." },
+      { "title": "Wound Healing", "description": "Helps heal wounds faster. Prevents infection." },
+      { "title": "Blood Pressure", "description": "Helps regulate BP levels. Supports heart health." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Kerala", "Maharashtra"]
+  },
+
+  "nooni": {
+    "scientific_name": "Morinda citrifolia",
+    "common_name": "Nooni",
+    "image": "/static/images/nooni.png",
+    "medicinal_use": [
+      { "title": "Immunity Boost", "description": "Strengthens immune system. Improves body resistance." },
+      { "title": "Joint Pain Relief", "description": "Reduces inflammation in joints. Used in herbal oils." },
+      { "title": "Digestive Health", "description": "Improves digestion and gut health. Detoxifies body." },
+      { "title": "Skin Healing", "description": "Helps treat skin infections. Improves skin health." }
+    ],
+    "region": ["Karnataka", "Kerala", "Tamil Nadu", "Andhra Pradesh"]
+  },
+
+  "spinach": {
+    "scientific_name": "Spinacia oleracea",
+    "common_name": "Spinach",
+    "image": "/static/images/spinach.png",
+    "medicinal_use": [
+      { "title": "Iron Source", "description": "Rich in iron. Helps prevent anemia." },
+      { "title": "Bone Health", "description": "Contains calcium and supports bones. Improves strength." },
+      { "title": "Eye Health", "description": "Improves vision health. Rich in vitamin A." },
+      { "title": "Digestion", "description": "Improves digestion. High fiber content." }
+    ],
+    "region": ["Punjab", "Uttar Pradesh", "Haryana", "Karnataka"]
+  },
+
+  "papaya": {
+    "scientific_name": "Carica papaya",
+    "common_name": "Papaya",
+    "image": "/static/images/papaya.png",
+    "medicinal_use": [
+      { "title": "Digestion", "description": "Contains enzymes that improve digestion. Reduces bloating." },
+      { "title": "Immunity Boost", "description": "Rich in vitamins. Strengthens immune system." },
+      { "title": "Skin Health", "description": "Improves skin glow. Reduces acne." },
+      { "title": "Wound Healing", "description": "Speeds up tissue repair. Prevents infection." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Kerala", "Andhra Pradesh"]
+  },
+
+  "pomogranate": {
+    "scientific_name": "Punica granatum",
+    "common_name": "Pomogranate",
+    "image": "/static/images/pomogranate.png",
+    "medicinal_use": [
+      { "title": "Heart Health", "description": "Improves blood circulation. Supports heart health." },
+      { "title": "Blood Purification", "description": "Improves blood quality. Rich in antioxidants." },
+      { "title": "Digestion", "description": "Improves digestion. Reduces stomach issues." },
+      { "title": "Immunity Boost", "description": "Strengthens immunity. Rich in nutrients." }
+    ],
+    "region": ["Maharashtra", "Gujarat", "Karnataka", "Rajasthan"]
+  },
+
+  "pumpkin": {
+    "scientific_name": "Cucurbita maxima",
+    "common_name": "Pumpkin",
+    "image": "/static/images/pumpkin.png",
+    "medicinal_use": [
+      { "title": "Eye Health", "description": "Rich in vitamin A. Improves vision." },
+      { "title": "Heart Health", "description": "Reduces cholesterol. Supports heart function." },
+      { "title": "Digestion", "description": "High fiber improves digestion. Prevents constipation." },
+      { "title": "Immunity Boost", "description": "Strengthens immune system. Rich in nutrients." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Maharashtra", "Uttar Pradesh"]
+  },
+
+  "raktachandini": {
+    "scientific_name": "Pterocarpus santalinus",
+    "common_name": "Raktachandini",
+    "image": "/static/images/raktachandini.png",
+    "medicinal_use": [
+      { "title": "Skin Healing", "description": "Used for skin disorders. Reduces irritation." },
+      { "title": "Blood Purification", "description": "Cleanses blood naturally. Improves circulation." },
+      { "title": "Anti-inflammatory", "description": "Reduces inflammation. Used in Ayurveda." },
+      { "title": "Wound Healing", "description": "Helps heal wounds faster. Prevents infection." }
+    ],
+    "region": ["Andhra Pradesh", "Karnataka", "Tamil Nadu", "Odisha"]
+  },
+
+  "rose": {
+    "scientific_name": "Rosa indica",
+    "common_name": "Rose",
+    "image": "/static/images/rose.png",
+    "medicinal_use": [
+      { "title": "Skin Care", "description": "Improves skin glow. Reduces acne." },
+      { "title": "Stress Relief", "description": "Fragrance calms mind. Reduces anxiety." },
+      { "title": "Cooling Effect", "description": "Reduces body heat. Soothes system." },
+      { "title": "Digestion", "description": "Improves digestion. Mild detox effect." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Uttar Pradesh", "Maharashtra"]
+  },
+
+  "sapota": {
+    "scientific_name": "Manilkara zapota",
+    "common_name": "Sapota",
+    "image": "/static/images/sapota.png",
+    "medicinal_use": [
+      { "title": "Energy Boost", "description": "Provides natural energy. Rich in nutrients." },
+      { "title": "Digestion", "description": "Improves digestion. Prevents constipation." },
+      { "title": "Immunity", "description": "Strengthens immunity. Rich in vitamins." },
+      { "title": "Skin Health", "description": "Improves skin texture. Supports glow." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Kerala", "Maharashtra"]
+  },
+
+  "seethapala": {
+    "scientific_name": "Annona squamosa",
+    "common_name": "seethapala",
+    "image": "/static/images/seethapala.png",
+    "medicinal_use": [
+      { "title": "Energy Boost", "description": "Provides instant energy. Rich in sugars." },
+      { "title": "Immunity", "description": "Strengthens immunity. Rich in antioxidants." },
+      { "title": "Digestion", "description": "Improves digestion. Prevents constipation." },
+      { "title": "Heart Health", "description": "Supports heart function. Improves circulation." }
+    ],
+    "region": ["Karnataka", "Andhra Pradesh", "Maharashtra", "Tamil Nadu"]
+  },
+
+  "tamarind": {
+    "scientific_name": "Tamarindus indica",
+    "common_name": "Tamarind",
+    "image": "/static/images/tamarind.png",
+    "medicinal_use": [
+      { "title": "Digestion", "description": "Improves digestion. Relieves constipation." },
+      { "title": "Immunity", "description": "Rich in antioxidants. Boosts immunity." },
+      { "title": "Heart Health", "description": "Reduces cholesterol. Supports heart." },
+      { "title": "Anti-inflammatory", "description": "Reduces inflammation. Supports joints." }
+    ],
+    "region": ["Tamil Nadu", "Karnataka", "Andhra Pradesh", "Maharashtra"]
+  },
+
+  "tomato": {
+    "scientific_name": "Solanum lycopersicum",
+    "common_name": "Tomato",
+    "image": "/static/images/tomato.png",
+    "medicinal_use": [
+      { "title": "Heart Health", "description": "Rich in lycopene. Supports heart health." },
+      { "title": "Skin Health", "description": "Improves skin glow. Reduces acne." },
+      { "title": "Digestion", "description": "Improves digestion. High fiber." },
+      { "title": "Immunity", "description": "Boosts immunity. Rich in vitamins." }
+    ],
+    "region": ["Karnataka", "Maharashtra", "Uttar Pradesh", "Tamil Nadu"]
+  },
+
+  "tulsi": {
+    "scientific_name": "Ocimum tenuiflorum",
+    "common_name": "Tulsi",
+    "image": "/static/images/tulsi.png",
+    "medicinal_use": [
+      { "title": "Immunity Booster", "description": "Strengthens immune system. Fights infections." },
+      { "title": "Respiratory Health", "description": "Helps in cough and cold. Clears lungs." },
+      { "title": "Stress Relief", "description": "Reduces stress. Calms nerves." },
+      { "title": "Antibacterial", "description": "Fights bacteria. Supports healing." }
+    ],
+    "region": ["Karnataka", "Uttar Pradesh", "Maharashtra", "Tamil Nadu"]
+  },
+
+  "wood_sorel": {
+    "scientific_name": "Oxalis corniculata",
+    "common_name": "Wood Sorel",
+    "image": "/static/images/wood_sorel.png",
+    "medicinal_use": [
+      { "title": "Digestion", "description": "Improves digestion. Reduces acidity." },
+      { "title": "Wound Healing", "description": "Helps heal cuts. Prevents infection." },
+      { "title": "Fever Relief", "description": "Reduces fever naturally. Traditional use." },
+      { "title": "Anti-inflammatory", "description": "Reduces inflammation. Supports healing." }
+    ],
+    "region": ["Karnataka", "Kerala", "Tamil Nadu", "Maharashtra"]
+  },
+
+  "ganike": {
+    "scientific_name": "Cleome viscosa",
+    "common_name": "Ganike",
+    "image": "/static/images/ganike.png",
+    "medicinal_use": [
+      { "title": "Anti-inflammatory", "description": "Reduces swelling and pain. Used in traditional herbal medicine." },
+      { "title": "Wound Healing", "description": "Speeds up healing of cuts and injuries. Prevents infection." },
+      { "title": "Digestive Aid", "description": "Improves digestion and reduces stomach discomfort." },
+      { "title": "Fever Relief", "description": "Helps reduce fever naturally. Used in folk medicine." }
+    ],
+    "region": ["Karnataka", "Tamil Nadu", "Kerala", "Andhra Pradesh"]
+  },
+
+  "guava": {
+    "scientific_name": "Psidium guajava",
+    "common_name": "Guava",
+    "image": "/static/images/guava.png",
+    "medicinal_use": [
+      { "title": "Immunity Boost", "description": "Rich in vitamin C. Strengthens immune system." },
+      { "title": "Digestion", "description": "Improves digestion and prevents constipation." },
+      { "title": "Blood Sugar Control", "description": "Helps regulate glucose levels naturally." },
+      { "title": "Heart Health", "description": "Improves cholesterol balance and supports heart." }
+    ],
+    "region": ["Maharashtra", "Uttar Pradesh", "Karnataka", "Bihar"]
+  },
+
+  "henna": {
+    "scientific_name": "Lawsonia inermis",
+    "common_name": "Henna",
+    "image": "/static/images/henna.png",
+    "medicinal_use": [
+      { "title": "Cooling Effect", "description": "Reduces body heat. Used in summer remedies." },
+      { "title": "Hair Care", "description": "Strengthens hair and improves texture naturally." },
+      { "title": "Skin Treatment", "description": "Helps treat skin infections and irritation." },
+      { "title": "Antifungal", "description": "Fights fungal infections. Used in traditional medicine." }
+    ],
+    "region": ["Rajasthan", "Gujarat", "Madhya Pradesh", "Maharashtra"]
+  },
+
+  "hibiscus": {
+    "scientific_name": "Hibiscus rosa-sinensis",
+    "common_name": "hibiscus",
+    "image": "/static/images/hibiscus.png",
+    "medicinal_use": [
+      { "title": "Hair Growth", "description": "Promotes hair growth and reduces hair fall." },
+      { "title": "Skin Health", "description": "Improves skin glow and reduces acne." },
+      { "title": "Blood Pressure", "description": "Helps regulate blood pressure naturally." },
+      { "title": "Cooling Herb", "description": "Reduces body heat and calms the system." }
+    ],
+    "region": ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh"]
+  },
+
+  "honge": {
+    "scientific_name": "Pongamia pinnata",
+    "common_name": "Honge",
+    "image": "/static/images/honge.png",
+    "medicinal_use": [
+      { "title": "Skin Diseases", "description": "Used to treat skin disorders and irritation." },
+      { "title": "Joint Pain Relief", "description": "Reduces inflammation and joint pain." },
+      { "title": "Wound Healing", "description": "Helps wounds heal faster and prevents infection." },
+      { "title": "Antibacterial", "description": "Fights bacteria and supports skin health." }
+    ],
+    "region": ["Karnataka", "Maharashtra", "Tamil Nadu", "Kerala"]
+  },
+
+  "insulin": {
+    "scientific_name": "Chamaecostus cuspidatus",
+    "common_name": "Insulin",
+    "image": "/static/images/insulin.png",
+    "medicinal_use": [
+      { "title": "Diabetes Control", "description": "Helps regulate blood sugar levels naturally." },
+      { "title": "Metabolism Support", "description": "Improves glucose metabolism in body." },
+      { "title": "Immunity Boost", "description": "Strengthens body resistance and immunity." },
+      { "title": "Liver Health", "description": "Supports liver detoxification and function." }
+    ],
+    "region": ["Kerala", "Karnataka", "Tamil Nadu", "Andhra Pradesh"]
+  },
+
+  "jackfruit": {
+    "scientific_name": "Artocarpus heterophyllus",
+    "common_name": "Jackfruit",
+    "image": "/static/images/jackfruit.png",
+    "medicinal_use": [
+      { "title": "Energy Boost", "description": "Provides high energy and nutrition." },
+      { "title": "Digestion", "description": "Improves digestion and prevents constipation." },
+      { "title": "Immunity", "description": "Rich in vitamins that strengthen immunity." },
+      { "title": "Heart Health", "description": "Supports heart health and cholesterol balance." }
+    ],
+    "region": ["Kerala", "Karnataka", "Tamil Nadu", "Goa"]
+  }
+}
+

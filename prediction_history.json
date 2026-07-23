@@ -1,0 +1,474 @@
+[
+    {
+        "image": "static/uploads\\ChatGPT_Image_May_22_2026_09_00_01_PM.png",
+        "predicted_species": "Neem",
+        "confidence": 96.4,
+        "actual_species": "Neem",
+        "status": "Correct",
+        "time": "Not Available"
+    },
+    {
+        "image": "static/uploads\\ChatGPT_Image_May_22_2026_09_00_01_PM.png",
+        "predicted_species": "Neem",
+        "confidence": 96.4,
+        "actual_species": "Neem",
+        "status": "Correct",
+        "time": "Not Available"
+    },
+    {
+        "image": "static/uploads/mint.jpg",
+        "predicted_species": "mint",
+        "actual_species": "mint",
+        "confidence": 36.82,
+        "status": "Correct",
+        "time": "2026-05-28 21:20:33"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "aloe_vera",
+        "confidence": 98.79,
+        "status": "Correct",
+        "time": "2026-05-28 21:33:06"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "aloe_vera",
+        "confidence": 98.79,
+        "status": "Correct",
+        "time": "2026-05-28 21:53:15"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "aloe_vera",
+        "confidence": 98.79,
+        "status": "Correct",
+        "time": "2026-05-28 22:51:08"
+    },
+    {
+        "image": "static/uploads/pumpkin.jpg",
+        "predicted_species": "pumpkin",
+        "actual_species": "pumpkin",
+        "confidence": 98.39,
+        "status": "Correct",
+        "time": "2026-05-28 22:52:25"
+    },
+    {
+        "image": "static/uploads/rose.jpg",
+        "predicted_species": "rose",
+        "actual_species": "rose",
+        "confidence": 55.59,
+        "status": "Correct",
+        "time": "2026-05-28 22:53:42"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "aloe_vera",
+        "confidence": 98.79,
+        "status": "Correct",
+        "time": "2026-05-28 22:55:31"
+    },
+    {
+        "image": "static/uploads/arali.jpg",
+        "predicted_species": "arali",
+        "actual_species": "arali",
+        "confidence": 76.17,
+        "status": "Correct",
+        "time": "2026-05-28 22:55:40"
+    },
+    {
+        "image": "static/uploads/curryleaf.jpg",
+        "predicted_species": "curry_leaf",
+        "actual_species": "curry_leaf",
+        "confidence": 99.7,
+        "status": "Correct",
+        "time": "2026-05-28 22:55:52"
+    },
+    {
+        "image": "static/uploads/mint.jpg",
+        "predicted_species": "mint",
+        "actual_species": "mint",
+        "confidence": 36.82,
+        "status": "Correct",
+        "time": "2026-05-28 22:56:04"
+    },
+    {
+        "image": "static/uploads/neem-leaf.jpg",
+        "predicted_species": "neem",
+        "actual_species": "neem",
+        "confidence": 41.42,
+        "status": "Correct",
+        "time": "2026-05-28 22:56:15"
+    },
+    {
+        "image": "static/uploads/pumpkin.jpg",
+        "predicted_species": "pumpkin",
+        "actual_species": "pumpkin",
+        "confidence": 98.39,
+        "status": "Correct",
+        "time": "2026-05-28 22:56:24"
+    },
+    {
+        "image": "static/uploads/rose.jpg",
+        "predicted_species": "rose",
+        "actual_species": "rose",
+        "confidence": 55.59,
+        "status": "Correct",
+        "time": "2026-05-28 22:56:32"
+    },
+    {
+        "image": "static/uploads/tamarind.jpg",
+        "predicted_species": "tamarind",
+        "actual_species": "tamarind",
+        "confidence": 44.6,
+        "status": "Correct",
+        "time": "2026-05-28 22:56:44"
+    },
+    {
+        "image": "static/uploads/tulsi.jpg",
+        "predicted_species": "tulsi",
+        "actual_species": "tulsi",
+        "confidence": 91.92,
+        "status": "Correct",
+        "time": "2026-05-28 22:56:54"
+    },
+    {
+        "image": "static/uploads/neem-leaf.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 41.42,
+        "status": "Pending",
+        "time": "2026-05-28 23:00:23"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "",
+        "confidence": 98.79,
+        "status": "Pending",
+        "time": "2026-05-30 13:01:53"
+    },
+    {
+        "image": "static/uploads/curryleaf.jpg",
+        "predicted_species": "curry_leaf",
+        "actual_species": "",
+        "confidence": 99.7,
+        "status": "Pending",
+        "time": "2026-05-30 14:50:22"
+    },
+    {
+        "image": "static/uploads/pumpkin.jpg",
+        "predicted_species": "pumpkin",
+        "actual_species": "",
+        "confidence": 98.39,
+        "status": "Pending",
+        "time": "2026-06-15 13:48:13"
+    },
+    {
+        "image": "static/uploads/rose.jpg",
+        "predicted_species": "rose",
+        "actual_species": "",
+        "confidence": 55.59,
+        "status": "Pending",
+        "time": "2026-06-15 13:48:36"
+    },
+    {
+        "image": "static/uploads/tamarind.jpg",
+        "predicted_species": "tamarind",
+        "actual_species": "",
+        "confidence": 44.6,
+        "status": "Pending",
+        "time": "2026-06-15 13:48:48"
+    },
+    {
+        "image": "static/uploads/neem-leaf.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 41.42,
+        "status": "Pending",
+        "time": "2026-06-15 13:49:02"
+    },
+    {
+        "image": "static/uploads/pumpkin.jpg",
+        "predicted_species": "pumpkin",
+        "actual_species": "",
+        "confidence": 98.39,
+        "status": "Pending",
+        "time": "2026-06-19 11:42:38"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "",
+        "confidence": 98.79,
+        "status": "Pending",
+        "time": "2026-06-23 11:59:42"
+    },
+    {
+        "image": "static/uploads/soundarya.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 69.38,
+        "status": "Pending",
+        "time": "2026-06-23 12:02:54"
+    },
+    {
+        "image": "static/uploads/images.jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 64.59,
+        "status": "Pending",
+        "time": "2026-06-23 12:09:32"
+    },
+    {
+        "image": "static/uploads/l1.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 41.42,
+        "status": "Pending",
+        "time": "2026-06-23 12:13:17"
+    },
+    {
+        "image": "static/uploads/l.jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 50.53,
+        "status": "Pending",
+        "time": "2026-06-23 12:17:55"
+    },
+    {
+        "image": "static/uploads/t.jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 61.14,
+        "status": "Pending",
+        "time": "2026-06-23 12:19:34"
+    },
+    {
+        "image": "static/uploads/123.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 38.35,
+        "status": "Pending",
+        "time": "2026-06-23 12:20:42"
+    },
+    {
+        "image": "static/uploads/N1.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 41.5,
+        "status": "Pending",
+        "time": "2026-06-23 12:24:37"
+    },
+    {
+        "image": "static/uploads/images (1).jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 89.12,
+        "status": "Pending",
+        "time": "2026-06-23 12:25:42"
+    },
+    {
+        "image": "static/uploads/n2.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 96.51,
+        "status": "Pending",
+        "time": "2026-06-23 12:27:38"
+    },
+    {
+        "image": "static/uploads/13.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 36.46,
+        "status": "Pending",
+        "time": "2026-06-23 12:32:37"
+    },
+    {
+        "image": "static/uploads/3.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 47.46,
+        "status": "Pending",
+        "time": "2026-06-23 12:35:01"
+    },
+    {
+        "image": "static/uploads/2323.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 47.46,
+        "status": "Pending",
+        "time": "2026-06-23 12:38:14"
+    },
+    {
+        "image": "static/uploads/images (1).jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 89.12,
+        "status": "Pending",
+        "time": "2026-06-28 19:47:10"
+    },
+    {
+        "image": "static/uploads/soundarya.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 69.38,
+        "status": "Pending",
+        "time": "2026-06-28 19:50:59"
+    },
+    {
+        "image": "static/uploads/t.jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 61.14,
+        "status": "Pending",
+        "time": "2026-06-28 19:52:53"
+    },
+    {
+        "image": "static/uploads/3.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 47.46,
+        "status": "Pending",
+        "time": "2026-06-28 19:55:44"
+    },
+    {
+        "image": "static/uploads/2323.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 47.46,
+        "status": "Pending",
+        "time": "2026-06-28 20:04:38"
+    },
+    {
+        "image": "static/uploads/N1.jpg",
+        "predicted_species": "neem",
+        "actual_species": "",
+        "confidence": 41.5,
+        "status": "Pending",
+        "time": "2026-06-28 20:05:13"
+    },
+    {
+        "image": "static/uploads/l.jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 50.53,
+        "status": "Pending",
+        "time": "2026-06-28 20:05:43"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:07:02"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:09:09"
+    },
+    {
+        "image": "static/uploads/aloevera.jpg",
+        "predicted_species": "aloe_vera",
+        "actual_species": "",
+        "confidence": 98.79,
+        "status": "Pending",
+        "time": "2026-06-28 20:12:45"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:15:35"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:24:30"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:27:12"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:27:43"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:28:14"
+    },
+    {
+        "image": "static/uploads/arali.jpg",
+        "predicted_species": "arali",
+        "actual_species": "",
+        "confidence": 76.17,
+        "status": "Pending",
+        "time": "2026-06-28 20:28:58"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:36:46"
+    },
+    {
+        "image": "static/uploads/a.jpg",
+        "predicted_species": "ashoka",
+        "actual_species": "",
+        "confidence": 55.95,
+        "status": "Pending",
+        "time": "2026-06-28 20:39:02"
+    },
+    {
+        "image": "static/uploads/am.jpg",
+        "predicted_species": "raktachandini",
+        "actual_species": "",
+        "confidence": 45.4,
+        "status": "Pending",
+        "time": "2026-06-28 20:40:07"
+    },
+    {
+        "image": "static/uploads/Parijata-Amruthaballi.jpg",
+        "predicted_species": "tulsi",
+        "actual_species": "",
+        "confidence": 45.04,
+        "status": "Pending",
+        "time": "2026-06-28 20:41:45"
+    },
+    {
+        "image": "static/uploads/amruth.jpg",
+        "predicted_species": "papaya",
+        "actual_species": "",
+        "confidence": 49.16,
+        "status": "Pending",
+        "time": "2026-06-28 20:43:36"
+    }
+]

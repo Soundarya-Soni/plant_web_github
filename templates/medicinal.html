@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicinal Uses</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:40px 20px;
+
+            background:
+           
+            url("{{ url_for('static', filename='images/bg.jpg') }}");
+
+            background-size:cover;
+            background-position:center;
+        }
+
+        .container{
+            width:100%;
+            max-width:900px;
+
+            background:rgba(255,255,255,0.25);
+            backdrop-filter:blur(14px);
+
+            border-radius:30px;
+            padding:40px;
+
+            box-shadow:
+            0 10px 30px rgba(0,0,0,0.18),
+            inset 0 0 10px rgba(255,255,255,0.35);
+
+            border:1px solid rgba(255,255,255,0.4);
+        }
+
+        .top-icon{
+            text-align:center;
+            font-size:42px;
+            margin-bottom:10px;
+        }
+
+        .title{
+            text-align:center;
+            font-size:52px;
+            font-weight:700;
+            color:#653405;
+            margin-bottom:8px;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#066132;
+            font-size:15px;
+            font-weight:500;
+            margin-bottom:35px;
+            letter-spacing:0.5px;
+        }
+
+        .cards{
+            display:flex;
+            flex-direction:column;
+            gap:22px;
+        }
+
+        .card{
+            display:flex;
+            gap:18px;
+            align-items:flex-start;
+
+            background:rgba(255,255,255,0.82);
+
+            padding:22px;
+            border-radius:22px;
+
+            box-shadow:0 6px 18px rgba(0,0,0,0.12);
+
+            transition:0.3s ease;
+        }
+
+        .card:hover{
+            transform:translateY(-5px) scale(1.01);
+
+            box-shadow:0 12px 24px rgba(0,0,0,0.18);
+        }
+
+        .icon{
+            min-width:58px;
+            height:58px;
+
+            border-radius:50%;
+
+            background:linear-gradient(135deg,#e8e5e1,#f1f1ed);
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            font-size:28px;
+            color:white;
+
+            box-shadow:0 5px 12px rgba(0,0,0,0.15);
+        }
+
+        .content{
+            flex:1;
+        }
+
+        .use-title{
+            font-size:21px;
+            font-weight:700;
+            color:#4b0646;
+
+            margin-bottom:10px;
+
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        .bullet{
+            color:#024918;
+            font-size:24px;
+        }
+
+        .description{
+            font-size:15px;
+            line-height:1.8;
+            color:#111010;
+            font-weight:500;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:35px;
+
+            color:#0d3d8f;
+            font-size:22px;
+            font-style:italic;
+            font-weight:500;
+        }
+
+        .button-container{
+            text-align:center;
+            margin-top:28px;
+        }
+
+        .back-btn{
+            display:inline-block;
+
+            padding:14px 34px;
+
+            background:linear-gradient(135deg,#1ec95b,#00a86b);
+
+            color:white;
+            text-decoration:none;
+
+            border-radius:40px;
+
+            font-size:16px;
+            font-weight:600;
+
+            transition:0.3s ease;
+
+            box-shadow:0 5px 14px rgba(0,0,0,0.18);
+        }
+
+        .back-btn:hover{
+            transform:translateY(-3px);
+
+            background:linear-gradient(135deg,#18b650,#00945d);
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                padding:25px;
+            }
+
+            .title{
+                font-size:36px;
+            }
+
+            .card{
+                padding:18px;
+            }
+
+            .use-title{
+                font-size:18px;
+            }
+
+            .description{
+                font-size:14px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-icon">🌿</div>
+
+        <div class="title">
+            {{ plant_name }} Medicinal Uses
+        </div>
+
+        <div class="subtitle">
+            Natural Healing Benefits & Herbal Applications
+        </div>
+
+        <div class="cards">
+
+            {% for use in info.medicinal_use %}
+
+            <div class="card">
+
+                <div class="icon">
+                    🍃
+                </div>
+
+                <div class="content">
+
+                    <div class="use-title">
+                        <span class="bullet">●</span>
+                        {{ use.title }}
+                    </div>
+
+                    <div class="description">
+                        {{ use.description }}
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="footer">
+            💚 Nature is the Best Healer 🍃
+        </div>
+
+        <!-- BACK BUTTON -->
+
+            <a href="javascript:history.back()"
+            class="back-btn">
+
+                ← Back To Result
+
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
