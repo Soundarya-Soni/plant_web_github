@@ -470,5 +470,13 @@
         "confidence": 49.16,
         "status": "Pending",
         "time": "2026-06-28 20:43:36"
+    },
+    {
+        "image": "static/uploads/pumpkin.jpg",
+        "predicted_species": "pumpkin",
+        "actual_species": "",
+        "confidence": 98.39,
+        "status": "Pending",
+        "time": "2026-07-24 20:25:13"
     }
 ]
