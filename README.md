@@ -270,16 +270,4 @@ GitHub: https://github.com/Soundarya-Soni
 
 ---
 
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-<div align="center">
-
-### ⭐ If you found this project helpful, don't forget to star the repository!
-
-Made with ❤️ using Python, Flask & TensorFlow
-
 </div>
