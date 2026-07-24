@@ -8,9 +8,8 @@
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?style=for-the-badge&logo=flask)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-orange?style=for-the-badge&logo=tensorflow)
 ![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge&logo=html5)
-![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3)
+![CSS](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-yellow?style=for-the-badge&logo=javascript)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 A Flask-based deep learning web application that identifies medicinal plant species from uploaded images using a Convolutional Neural Network (CNN). The system predicts the plant species with a confidence score and provides scientific information and medicinal uses.
 
